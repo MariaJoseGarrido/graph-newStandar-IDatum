@@ -1,3 +1,8 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+
 body{
     margin:0px;
     padding:0px;
@@ -5,10 +10,13 @@ body{
     font-weight:300;
 }
 
+/*HEADER*/
 .header{
   background-color: black;
   height: 65px;
   position: relative;
+  display: flex;
+  width: 100%;
 }
 
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
@@ -19,20 +27,25 @@ body{
 .logo-img{
 height:46px;
 margin: 10px 0 10px 10px;
+border-right: 1px solid #F7F7F7;
+padding-right: 110px;
 }
 
 .main-title{
-  height: 200px;
+  height: 65px;
   position: relative;
-  margin-left: 240px;
-  background-color: tomato;
+  margin-left: 20px;
+  font-size: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
 }
 
+p{
+  margin-top:11px;
+}
 
+/*HEADER*/
 
-@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-
-@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
 
 /* ScrolBar  */
 
@@ -49,10 +62,10 @@ margin: 10px 0 10px 10px;
     height: 36px;
     text-align: center;
     top:12px; 
-    font-size: 25px;
+    font-size: 20px;
 }
 .main-menu:hover, nav.main-menu.expanded {
-    width:250px;
+    width:230px;
     overflow:hidden;
     opacity:1;
 }
@@ -68,7 +81,7 @@ margin: 10px 0 10px 10px;
     -webkit-transition:width .2s linear;
     transition:width .2s linear;
     transform: translateZ(0) scale(1,1);
-    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+    border-right: 1px solid #000000;
     opacity:1;
 }
 
@@ -79,26 +92,25 @@ margin: 10px 0 10px 10px;
 .main-menu li {
     position:relative;
     display:block;
-    width:250px;
+    width:230px;
 }
 
 .main-menu li>a {
     position:relative;
-    width:255px;
+    width:230px;
     display:table;
     border-collapse:collapse;
     border-spacing:0;
-    color:#8a8a8a;
+    color:#000000 !important;
     font-size: 13px;
     text-decoration:none;
     transform: translateZ(0) scale(1,1);
     -webkit-transition:all .14s linear;
     transition:all .14s linear;
-    font-family: 'Strait', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     border-top:1px solid #f2f2f2;
 }
 .main-menu .nav-text  {
-   
 position:relative;
 display:table-cell;
 vertical-align:middle;
@@ -123,7 +135,7 @@ nav ul,nav li {
 }
 
 .menu-drop {
-  width: 300px;
+  width: 240px;
   height: 100vh;
   background: #F7F7F7;
   overflow-y: auto;
@@ -146,7 +158,7 @@ a {
 .drop {
   line-height: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-left: 30px;
+  padding-left: 20px;
   position: relative;
 }
 
