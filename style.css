@@ -11,7 +11,7 @@ body{
 }
 
 /*HEADER*/
-.header{
+.header, .container{
   background-color: black;
   height: 65px;
   position: relative;
@@ -62,7 +62,7 @@ p{
     height: 36px;
     text-align: center;
     top:12px; 
-    font-size: 20px;
+    font-size: 25px;
 }
 .main-menu:hover, nav.main-menu.expanded {
     width:230px;
@@ -72,11 +72,10 @@ p{
 .main-menu {
     background:#F7F7F7;
     position:absolute;
-    top:65px;
     bottom:0;
-    height:100%;
+    height:89%; /*considerar altura de prueba con la de idatum para configurar, dejar en 100%*/
     left:0;
-    width:55px;
+    width:48px;
     overflow:hidden;
     -webkit-transition:width .2s linear;
     transition:width .2s linear;
@@ -116,7 +115,7 @@ display:table-cell;
 vertical-align:middle;
 width:200px;
 line-height: 25px;
-font-family: 'Titillium Web', sans-serif;
+ font-family: 'Source Sans Pro', sans-serif;
 }
 a:hover,a:focus {
     text-decoration:none;
@@ -155,7 +154,6 @@ a {
   transition: backgorund 0.25s, color 0.25s;
 }
 
-
 .drop {
   line-height: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -164,14 +162,9 @@ a {
 }
 
 .drop:hover, .nav-text:hover {
- background-color: rgba(134, 131, 131, 0.1);
+ background-color: rgba(211, 209, 209, 0.1);
  color:rgba(46, 45, 45);
 }
-
-/* .drop:active, .nav-text:active {
-  background-color: rgba(134, 131, 131, 0.1);
-  color:rgba(46, 45, 45);
- } */
 
 nav > ul > li > a:after {
   position: absolute;
@@ -189,3 +182,11 @@ ul ul a {
   text-transform: none;
   font-size: 14px;
 }
+
+/*media query*/
+@media (min-width: 1200px){
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1920px !important;
+}
+}
+  

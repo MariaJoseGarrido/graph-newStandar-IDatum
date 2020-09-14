@@ -3,3 +3,4 @@ $('.drop').on('click', function (e) {
     $('nav ul ul').slideUp();
     $(this).next().is(":visible") || $(this).next().slideDown();
 });
+
