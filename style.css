@@ -11,7 +11,7 @@ body{
 }
 
 /*HEADER*/
-.header, .container{
+.header{
   background-color: black;
   height: 65px;
   position: relative;
@@ -40,6 +40,7 @@ padding-right: 110px;
   text-align: center;
 }
 
+
 p{
   margin-top:11px;
 }
@@ -49,20 +50,13 @@ p{
 
 /* ScrolBar  */
 
-.fa-lg {
-  font-size: 2.5em;
-  line-height: .75em;
-  vertical-align: -.0667em;
-}
 
 .fa, .fas {
-    position: relative;
-    display: table-cell;
-    width: 55px;
-    height: 36px;
-    text-align: center;
-    top:12px; 
-    font-size: 25px;
+    width: 20px;
+
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10px;
 }
 .main-menu:hover, nav.main-menu.expanded {
     width:230px;
@@ -75,13 +69,9 @@ p{
     bottom:0;
     height:89%; /*considerar altura de prueba con la de idatum para configurar, dejar en 100%*/
     left:0;
-    width:48px;
-    overflow:hidden;
-    -webkit-transition:width .2s linear;
-    transition:width .2s linear;
-    transform: translateZ(0) scale(1,1);
-    border-right: 1px solid #000000;
     opacity:1;
+    border-right: 1px solid #000000;
+    margin-left: 5px;
 }
 
 .main-menu>ul {
@@ -101,22 +91,39 @@ p{
     border-collapse:collapse;
     border-spacing:0;
     color:#000000 !important;
-    font-size: 13px;
+    font-size: 14px;
     text-decoration:none;
-    transform: translateZ(0) scale(1,1);
-    -webkit-transition:all .14s linear;
     transition:all .14s linear;
     font-family: 'Source Sans Pro', sans-serif;
     border-top:1px solid #f2f2f2;
+    
 }
+
+.border-left {
+  border-left: 10px solid red!important;
+}
+
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: .75em;
+  vertical-align: -.0667em;
+  margin-right: 10px;
+  color:#0A4C97;
+  font-size: 20px;
+  margin-top:5px;
+}
+
 .main-menu .nav-text  {
-position:relative;
-display:table-cell;
-vertical-align:middle;
-width:200px;
-line-height: 25px;
- font-family: 'Source Sans Pro', sans-serif;
+  position:relative;
+  display:table-cell;
+  vertical-align:middle;
+  width:200px;
+  line-height: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: left !important;
+  margin-left: 200px;
 }
+
 a:hover,a:focus {
     text-decoration:none;
     border-left:0px solid #F7F7F7;
@@ -128,25 +135,25 @@ nav ul,nav li {
     outline:0;
     margin:0;
     padding:0;
-    text-transform: uppercase;
 }
-.text-center{
-    text-align: center;
+
+.text-center {
+  text-align: left !important;
 }
 
 .menu-drop {
-  width: 240px;
+  width: 230px;
   height: 100vh;
   background: #F7F7F7;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
   display: block;
   color:#8a8a8a;
   font-size: 14px;
@@ -182,11 +189,3 @@ ul ul a {
   text-transform: none;
   font-size: 14px;
 }
-
-/*media query*/
-@media (min-width: 1200px){
-  .container, .container-lg, .container-md, .container-sm, .container-xl {
-    max-width: 1920px !important;
-}
-}
-  
